@@ -11,8 +11,23 @@ public class Feature {
     }
 
     public static ArrayList<Integer> intArraySortDesc(ArrayList<Integer> input){
-        //your code here
-        return null;
+        for(int i = 1; i < input.size(); i++){
+            for(int j = i; j > 0; j--){
+                if(input.get(j) <= input.get(j-1)){
+                    break;
+                }
+                else{
+                    int temp = input.get(j);
+                    input.add(j, input.get(j-1));
+                    input.add(j-1, temp);
+                }
+                    
+
+                
+            }
+        }
+
+        return input;
     }
 
     public static ArrayList<String> stringArraySortAsc(ArrayList<String> input){
