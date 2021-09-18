@@ -1,13 +1,15 @@
 public class SortArray {
     public static void main(String[] args) {
 		
-		int [] testArray = {3,4,1,2};
+		int [] testIntArray = {3,4,1,2};
 		
-        int [] arr = sortIntArrayDesc(testArray);
+        int [] arr = sortIntArrayDesc(testIntArray);
         System.out.print("sort {3,4,1,2} Desc: ");
         for(int item:arr){
             System.out.print(item+" ");
         }
+            
+
 	}
 
 
