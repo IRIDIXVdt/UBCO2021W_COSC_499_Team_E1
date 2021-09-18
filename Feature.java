@@ -3,8 +3,11 @@ import java.util.Collections;
 
 public class Feature {
     public static int arraySum(ArrayList<Integer> input){
-        //your code here
-        return 0;
+        int arrsum = 0;
+        for(int total: input){
+            arrsum = total + arrsum;
+        }
+        return arrsum;
     }
     public static int arrayProduct(ArrayList<Integer> input){
         //your code here
