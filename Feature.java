@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Feature {
     public static int arraySum(ArrayList<Integer> input){
@@ -11,22 +12,13 @@ public class Feature {
     }
 
     public static ArrayList<Integer> intArraySortDesc(ArrayList<Integer> input){
-        for(int i = 1; i < input.size(); i++){
-            for(int j = i; j > 0; j--){
-                if(input.get(j) <= input.get(j-1)){
-                    break;
+        for (int i = 0; i < input.size()-1; i++) {  
+            for (int j = i+1; j < input.size(); j++) {
+                if(input.get(i)<input.get(j)){                  
+                    Collections.swap(input, i, j);
                 }
-                else{
-                    int temp = input.get(j);
-                    input.add(j, input.get(j-1));
-                    input.add(j-1, temp);
-                }
-                    
-
-                
             }
         }
-
         return input;
     }
 
