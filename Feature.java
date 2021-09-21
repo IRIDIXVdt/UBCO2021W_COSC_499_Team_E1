@@ -6,9 +6,12 @@ public class Feature {
         //your code here
         return 0;
     }
-    public static int arrayProduct(ArrayList<Integer> input){
-        //your code here
-        return 0;
+    public static long arrayProduct(ArrayList<Integer> input){
+        long product =1;
+        for(int i = 0; i <input.size();i++){
+            product = product * input.get(i);
+        }
+        return product;
     }
 
     public static ArrayList<Integer> intArraySortDesc(ArrayList<Integer> input){
