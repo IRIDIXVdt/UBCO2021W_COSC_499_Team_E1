@@ -1,7 +1,8 @@
 # COSC 499 Team Exercise 1
 
 Welcome! This repository serves solely as part of an assignment for UBCO COSC 499 Team Exercise.
-It consists of three classes:
+It consists of two classes:
+
   ## Main 
     We have code for running methods in the feature classes. This is where the main method locates.
   ## Feature 
