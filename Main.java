@@ -42,7 +42,6 @@ public class Main{
         
         //--------------------------------------
 
-
         System.out.println("\nFeature 1 intArraySortDesc: "+Feature.intArraySortDesc(testIntArray));     
         System.out.println("\nFeature 2 stringArraySortAsc: "+Feature.stringArraySortAsc(testStringArray));  
         System.out.println("\nFeature 3 arrayProduct: "+Feature.arrayProduct(testIntArray));       

@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 
 public class Feature {
     public static int arraySum(ArrayList<Integer> input){
@@ -30,7 +31,13 @@ public class Feature {
     }
 
     public static ArrayList<String> stringArraySortAsc(ArrayList<String> input){
-        //your code here
-        return null;
+        try{
+            ArrayList<String> sortT = (ArrayList<String>)input.clone();
+            sortT.sort(Comparator.naturalOrder());
+            return sortT;
+        }catch(Exception e){
+            return null;
+        }
+        
     }
 }
